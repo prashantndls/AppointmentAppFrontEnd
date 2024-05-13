@@ -1,0 +1,10 @@
+
+<ul>
+    <ng-container *ngFor="let slott of slots;let i=index">
+        
+            <app-viewslot [slot]="slott" style="flex: 1;padding:5%"></app-viewslot>
+        
+    </ng-container>
+</ul>
+<!-- <button (click)="loadPrevious()" style="align:left" [disabled]="pageNum==0">Previous</button> <button (click)="loadNext()" style="align:right" [disabled]="appointables.length==0">Next</button> -->
+<div style="clear:both"></div>

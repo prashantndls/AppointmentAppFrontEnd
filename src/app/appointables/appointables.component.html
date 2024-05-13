@@ -1,0 +1,10 @@
+
+<ul>
+    <ng-container *ngFor="let appointabl of appointables;let i=index">
+        
+            <app-appointable [appointable]="appointabl" style="flex: 1"></app-appointable>
+        
+    </ng-container>
+</ul>
+<button (click)="loadPrevious()" style="align:left" [disabled]="pageNum==0">Previous</button> <button (click)="loadNext()" style="align:right" [disabled]="appointables.length==0">Next</button>
+<div style="clear:both"></div>

@@ -1,0 +1,5 @@
+<li> Name: {{ slot.appointable.name }} </li>
+<li> Address {{ slot.appointable.address }} </li>
+<li> daysAvailable {{ slot.appointable.daysAvailable }} </li>
+<li> date and time of slot: {{ slot.from }} to {{ slot.to }}</li>
+<a routerLink="/bookslot/{{ slot.id }}">Book Appointment</a><br/>
